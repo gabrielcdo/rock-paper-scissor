@@ -6,6 +6,9 @@ var img1 = document.getElementById('myimg')
 var img2 = document.getElementById('opponentimg')
 var win = 0
 var background = document.getElementById('background')
+var texto = document.getElementById('textinho')
+
+
 
 function rand(){
     return Math.floor(Math.random()*3)+1;
@@ -17,7 +20,8 @@ function resolves(escolha){
      
      
      var aleatorio= rand()
-     
+     var escolhido = escolha.toString()
+     var opescolhido = aleatorio.toString()
      elementos.classList.add('hide');
      teste.classList.remove('hide')
      var btn = document.createElement('BUTTON')
@@ -53,9 +57,15 @@ function resolves(escolha){
            else{
             teste.innerHTML = 'Empate'
            }
-     
+           resultados.classList.remove('hide') 
+           img1.setAttribute('src',escolhido+'.png')
+           img2.setAttribute('src' ,opescolhido+'.png')
+  texto.classList.add('hide')
+    
 }
 function reset (){
+    texto.classList.remove('hide')
+    resultados.classList.add('hide')
     background.style.background = '#2d8cf0'
     win = 0
     document.getElementById('btnId').remove()

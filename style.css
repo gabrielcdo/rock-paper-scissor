@@ -18,6 +18,12 @@ width: 50px;}
     justify-content: space-around;
     align-items: center;
 }
+.resultados{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
 .hide{
     display: none;
 }
