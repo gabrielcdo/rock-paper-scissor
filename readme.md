@@ -2,4 +2,4 @@
 
 ### Joguinho simples ;)
 
-![funcionamento]()
+![funcionamento](https://github.com/gabrielcdo/rock-paper-scissour/blob/main/funcionamento.png)
