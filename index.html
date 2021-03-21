@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="externa" >
+    <div class="interna" id="background">
+     <h1>Pedra , Papel ou Tesoura</h1>
+     <p>Escolha um elemento para jogar e tente a sorte</p>
+     <p id="teste" class="hide"></p>
+     <div id="create"></div>
+     <div class="elementos" id="elementos">
+         <img src="papel.png" alt="pedra" onclick="resolves(1)">
+         <img src="pedra.png" alt="papel" onclick="resolves(2)">
+         <img src="tesoura.png" alt="tesoura" onclick="resolves(3)">
+     </div>
+     <div class="resultados hide" id="resultados">
+         <img alt="minha escolha" id="myimg">
+         <img alt="escolha do oponente" id="opponentimg">
+
+     </div>
+     
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
